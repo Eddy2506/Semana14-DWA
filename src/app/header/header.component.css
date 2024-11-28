@@ -1,0 +1,82 @@
+/* Estilos Generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #0A97B0; /* Fondo principal con el color solicitado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+.navbar {
+  padding: 15px 0;
+  border-bottom: 2px solid #000000; /* Línea sutil debajo de la navbar */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #000000; /* Efecto hover en el nombre */
+}
+
+.navbar-toggler {
+  border-color: #000000; /* Toggler color */
+}
+
+.navbar-toggler-icon {
+  background-color: #000000;
+}
+
+/* Menú de navegación */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.nav-item {
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: scale(1.1); /* Efecto de zoom cuando pasas el mouse sobre los elementos */
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: #000000; /* Hover color */
+}
+
+/* Efecto de hover en el fondo de la navbar */
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: #000000; /* Fondo azul más brillante cuando pasas el cursor */
+  color: #ffffff;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
